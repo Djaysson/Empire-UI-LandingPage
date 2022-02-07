@@ -1,7 +1,9 @@
+import Starter from "./sections/Starter";
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Starter />
     </div>
   );
 }
