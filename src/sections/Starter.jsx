@@ -6,10 +6,12 @@ import { GoPlay } from "react-icons/go";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 import "../styles/sections/Starter.scss";
+import Navbar from "../components/Navbar";
 
 function Starter() {
   return (
     <div className="main-container">
+      <Navbar />
       <div className="container">
         <div className="content">
           <h1>
@@ -19,21 +21,21 @@ function Starter() {
 
           <p>
             Uma agência profissional de desenvolvimento de aplicativos móveis e
-            da Web com mais de 100+ aplicativos desenvolvidos para Web e
-            aplicativos. fornecemos um serviço de alta qualidade no
+            da Web com mais de 100 aplicativos desenvolvidos para Web e
+            dispositivos móveis. fornecemos um serviço de alta qualidade no
             desenvolvimento de aplicativos web e móveis, bem como em design.
           </p>
           <div className="button-container">
-            <Button content="Watch video" icon={<GoPlay />} color="blue" />
+            <Button content="Assista vídeo" icon={<GoPlay />} color="blue" />
             <Button
-              content="Request quote"
+              content="Solicitar preço"
               icon={<HiOutlineArrowNarrowRight />}
               color="pink"
             />
           </div>
         </div>
         <div className="image">
-          <img src={WorkImage} alt="Work Image" />
+          <img src={WorkImage} alt="People at work meeting" />
         </div>
       </div>
     </div>

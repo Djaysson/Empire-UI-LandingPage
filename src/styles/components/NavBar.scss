@@ -1,0 +1,82 @@
+@import "../utils/colors.scss";
+
+.navbar {
+  margin: 3.2rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .collapsible-button {
+      display: none;
+    }
+  }
+  nav {
+    .links {
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        margin: 0.4rem 3.2rem;
+        color: $lightFontColor;
+        li {
+          a {
+            text-decoration: none;
+            font-size: 1.9rem;
+            color: $blueColor;
+            &:hover {
+              color: $pinkColor;
+            }
+          }
+          text-transform: uppercase;
+          margin: 0 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar.active {
+    nav {
+      display: block;
+    }
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .col {
+      .collapsible-button {
+        display: block;
+        svg {
+          font-size: 5rem;
+        }
+      }
+    }
+    nav {
+      display: none;
+      .links {
+        ul {
+          flex-direction: column;
+          align-items: center;
+          margin: 0.4rem 0rem;
+
+          li {
+            margin: 3.2rem 0 0 0;
+
+            &:first-of-type {
+              margin-top: 6.4rem;
+            }
+            a {
+              font-size: x-large;
+            }
+          }
+        }
+      }
+    }
+  }
+}

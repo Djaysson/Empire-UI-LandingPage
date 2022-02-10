@@ -1,0 +1,15 @@
+@import "../utils/colors.scss";
+
+.brand {
+  cursor: pointer;
+  span {
+    text-transform: uppercase;
+    font-size: x-large;
+    border: 0.3rem solid $blueColor;
+    color: $pinkColor;
+    padding: 0.9rem 1.6rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+  }
+}
