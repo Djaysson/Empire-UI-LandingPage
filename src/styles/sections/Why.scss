@@ -1,0 +1,76 @@
+@import "../utils/colors.scss";
+
+.why-container {
+  min-height: 50vh;
+  .container {
+    margin: 0 10%;
+    padding: 8rem 0;
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title {
+        margin-bottom: 1.6rem;
+      }
+      .subTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 65%;
+          text-align: center;
+          color: $lightFontColor;
+        }
+      }
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3.5rem;
+      margin-top: 1.6rem;
+      .reasons {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        ul {
+          width: 80%;
+          list-style: none;
+          li {
+            color: $lightFontColor;
+            margin-bottom: 2.4rem;
+            padding-left: 45px;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              top: -4px;
+              left: 0;
+              width: 24px;
+              height: 24px;
+              background-image: url("../../assets/images/check-circle.svg");
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+      .video {
+        height: 28.8rem;
+        width: 100%;
+        background-image: url("../../assets/images/videoImage.jpg");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          cursor: pointer;
+          color: white;
+          font-size: 11.2rem;
+        }
+      }
+    }
+  }
+}
