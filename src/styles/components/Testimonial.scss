@@ -1,0 +1,46 @@
+@import "../utils/colors.scss";
+
+.testimonial-container {
+  .quote {
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 8rem;
+      color: #f32a8f8f;
+    }
+  }
+  height: 25.6rem;
+  width: 95%;
+  border: none;
+  border-radius: 0.64rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.6rem;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    box-shadow: #410ba52f 5px 5px, #410ba51e 10px 10px, #410ba502 15px 15px;
+  }
+  .content {
+    color: $lightFontColor;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: rgb(99, 15, 179);
+    .name {
+      font-weight: bold;
+    }
+    .designation {
+      font-weight: 500;
+    }
+  }
+}
