@@ -1,0 +1,35 @@
+@import "../utils/colors.scss";
+
+.blogs-container {
+  .container {
+    margin: 0 10%;
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title {
+        margin-bottom: 1.6rem;
+      }
+      p {
+        color: $lightFontColor;
+      }
+    }
+    .blogs {
+      margin: 3.2rem 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6.4rem;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

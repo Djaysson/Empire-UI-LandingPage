@@ -1,0 +1,33 @@
+@import "../utils/colors.scss";
+
+.blog-container {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.64rem;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.4s ease-in-out;
+  &:hover {
+    box-shadow: #410ba52f 5px 5px, #410ba51e 10px 10px, #410ba502 15px 15px;
+  }
+  .image {
+    height: 19.2rem;
+    img {
+      height: 19.2rem;
+      width: 100%;
+    }
+  }
+  .content {
+    padding: 1rem;
+    .title {
+      h3 {
+        color: $headingColor;
+      }
+    }
+    .subTitle {
+      p {
+        color: $lightFontColor;
+      }
+    }
+  }
+}
