@@ -34,3 +34,14 @@ button {
     color: $buttonPinkColor;
   }
 }
+
+.inverse {
+  background-color: #fff;
+  color: $pinkColor;
+  border: 0.16rem solid $pinkColor;
+  &:hover {
+    background-color: $pinkColor;
+    border-color: transparent;
+    color: #fff;
+  }
+}
