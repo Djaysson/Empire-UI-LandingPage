@@ -4,10 +4,12 @@ import Why from "./sections/Why";
 import Testimonials from "./sections/Testimonials";
 import Blogs from "./sections/Blogs";
 import Footer from "./sections/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Starter />
       <About />
       <Why />
