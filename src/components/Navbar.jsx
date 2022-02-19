@@ -29,16 +29,16 @@ function Navbar() {
         <div className="links">
           <ul>
             <li>
-              <a href="#">Sobre</a>
+              <a href="#sobre">Sobre</a>
             </li>
             <li>
-              <a href="#">Serviços</a>
+              <a href="#servicos">Serviços</a>
             </li>
             <li>
-              <a href="#">Testemunho</a>
+              <a href="#depoimentos">Depoimentos</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="#blog">Blog</a>
             </li>
             <li>
               <Button content="Contato" />

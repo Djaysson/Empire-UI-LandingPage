@@ -4,7 +4,7 @@ import Title from "../components/Title";
 import "../styles/sections/Testimonials.scss";
 function Testimonials() {
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container" id="depoimentos">
       <div className="container">
         <div className="title-container">
           <Title title="Depoimentos" color="blue" lineCenter={true} />

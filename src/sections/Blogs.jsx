@@ -11,7 +11,7 @@ import "../styles/sections/Blogs.scss";
 
 function Blogs() {
   return (
-    <div className="blogs-container">
+    <div className="blogs-container" id="blog">
       <div className="container">
         <div className="title-container">
           <Title title="Blogs" color="pink" lineCenter={true} />

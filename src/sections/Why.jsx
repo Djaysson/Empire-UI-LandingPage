@@ -6,7 +6,7 @@ import "../styles/sections/Why.scss";
 
 function Why() {
   return (
-    <div className="why-container">
+    <div className="why-container" id="servicos">
       <div className="container">
         <div className="top">
           <Title title="Por que Empire ?" color="pink" lineCenter={true} />

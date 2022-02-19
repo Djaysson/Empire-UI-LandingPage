@@ -10,7 +10,7 @@ import { SiGooglemessages } from "react-icons/si";
 import "../styles/sections/About.scss";
 function About() {
   return (
-    <div className="about-container">
+    <div className="about-container" id="sobre">
       <div className="container">
         <div className="details">
           <Title title="Sobre a Empire" color="blue" />

@@ -2,9 +2,9 @@ import React from "react";
 
 import "../styles/components/BrandName.scss";
 
-function BrandName({}) {
+function BrandName({ isFooter = false }) {
   return (
-    <div className="brand">
+    <div className={`brand ${isFooter === true ? "footer" : ""}`}>
       <span>Empire</span>
     </div>
   );
