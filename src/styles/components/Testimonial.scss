@@ -44,3 +44,12 @@
     }
   }
 }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .testimonial-container {
+    width: 100%;
+    height: auto;
+    .content {
+      margin: 5rem 0 1rem;
+    }
+  }
+}

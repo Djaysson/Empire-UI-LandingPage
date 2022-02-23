@@ -14,9 +14,6 @@
   /* intervalo de tamanho clamp(mini,padrão,max)*/
   font-size: clamp(14px, 1.6rem, 2vw);
 }
-html {
-  scroll-behavior: smooth;
-}
 body {
   max-width: 100vw !important;
   font-family: "Raleway", sans-serif;
@@ -29,4 +26,14 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
   background-color: rgb(243, 42, 143);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
 }

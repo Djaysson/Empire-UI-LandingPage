@@ -45,3 +45,12 @@ button {
     color: #fff;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  button {
+    font-size: 1.3rem;
+    padding: 1.3rem;
+    svg {
+      font-size: small;
+    }
+  }
+}

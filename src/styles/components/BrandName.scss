@@ -20,3 +20,17 @@
     border-color: #fff;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .brand {
+    span {
+      font-size: 1.7rem;
+    }
+  }
+  .footer {
+    span {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}
