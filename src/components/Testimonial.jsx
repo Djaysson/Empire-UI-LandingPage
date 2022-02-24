@@ -1,8 +1,16 @@
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import "../styles/components/Testimonial.scss";
-function Testimonial({ content, name, designation }) {
+
+function Testimonial({ content, name, designation, variants, animate }) {
   return (
-    <div className="testimonial-container">
+    <motion.div
+      className="testimonial-container"
+      variants={variants}
+      animate={animate}
+    >
       <div className="quote">
         <span>&#10077;</span>
       </div>
@@ -11,7 +19,7 @@ function Testimonial({ content, name, designation }) {
         <div className="name">{name}</div>
         <div className="designation">{designation}</div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

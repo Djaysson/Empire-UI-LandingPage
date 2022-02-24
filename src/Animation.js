@@ -25,11 +25,18 @@ export const topContainerAnimation = {
   hidden: { opacity: 0 },
   show: { opacity: 1 },
 };
+
 export const videoAnimation = {
   hidden: { x: -800, opacity: 0 },
   show: { x: 0, opacity: 1 },
 };
+
 export const reasonsAnimation = {
   hidden: { x: 800, opacity: 0 },
   show: { x: 0, opacity: 1 },
+};
+
+export const textAnimation = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
 };
