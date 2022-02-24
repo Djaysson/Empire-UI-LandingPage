@@ -1,19 +1,30 @@
 import React from "react";
 import WorkImage from "../assets/images/work.svg";
 import Button from "../components/Button";
+import Navbar from "../components/Navbar";
 
 import { GoPlay } from "react-icons/go";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
+import { motion } from "framer-motion";
+import { headerAnimation, imageAnimation } from "../Animation";
+import { useScroll } from "../components/useScroll";
+
 import "../styles/sections/Starter.scss";
-import Navbar from "../components/Navbar";
 
 function Starter() {
+  const [element, controls] = useScroll();
+
   return (
-    <div className="main-container">
+    <div className="main-container" ref={element}>
       <Navbar />
       <div className="container">
-        <div className="content">
+        <motion.div
+          className="content"
+          variants={headerAnimation}
+          animate={controls}
+          transition={{ delay: 0.2, type: "tween" }}
+        >
           <h1>
             Nós fornecemos soluções para ajudá-lo a construir ou expandir seu
             negócio!
@@ -33,10 +44,15 @@ function Starter() {
               color="pink"
             />
           </div>
-        </div>
-        <div className="image">
+        </motion.div>
+        <motion.div
+          className="image"
+          variants={imageAnimation}
+          animate={controls}
+          transition={{ type: "tween" }}
+        >
           <img src={WorkImage} alt="People at work meeting" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
