@@ -40,3 +40,13 @@ export const textAnimation = {
   hidden: { opacity: 0 },
   show: { opacity: 1 },
 };
+
+export const fromUp = {
+  hidden: { y: 200, opacity: 0 },
+  show: { y: 0, opacity: 1 },
+};
+
+export const fromDown = {
+  hidden: { y: -200, opacity: 0 },
+  show: { y: 0, opacity: 1 },
+};

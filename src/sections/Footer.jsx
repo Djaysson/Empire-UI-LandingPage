@@ -4,13 +4,24 @@ import { AiFillInstagram, AiFillLinkedin, AiOutlineSend } from "react-icons/ai";
 import { FaFacebookF, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
+
+import { motion } from "framer-motion";
+import { useScroll } from "../components/useScroll";
+import { fromUp, fromDown } from "../Animation";
+
 import "../styles/sections/Footer.scss";
 function Footer() {
+  const [element, controls] = useScroll();
   return (
-    <div className="footer-container">
+    <div className="footer-container" ref={element}>
       <div className="container">
         <div className="main-container">
-          <div className="news-letter">
+          <motion.div
+            className="news-letter"
+            variants={fromUp}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
             <BrandName isFooter={true} />
             <p>
               Junte-se à nossa newsletter para ficar atualizado com as nossas
@@ -22,9 +33,14 @@ function Footer() {
                 <AiOutlineSend />
               </button>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="quick-links">
+          <motion.div
+            className="quick-links"
+            variants={fromDown}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
             <h3>Links Rápidos</h3>
             <ul>
               <li>
@@ -52,8 +68,13 @@ function Footer() {
                 <a href="#">Política de Privacidade</a>
               </li>
             </ul>
-          </div>
-          <div className="industries">
+          </motion.div>
+          <motion.div
+            className="industries"
+            variants={fromUp}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
             <h3>Indústrias</h3>
             <ul>
               <li>
@@ -78,8 +99,13 @@ function Footer() {
                 <a href="#">IOS App Development</a>
               </li>
             </ul>
-          </div>
-          <div className="touch">
+          </motion.div>
+          <motion.div
+            className="touch"
+            variants={fromDown}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
             <h3>Entrar em contato</h3>
             <div className="touch-section">
               <div className="icon">
@@ -115,7 +141,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="copyright">
           <div className="copy">
