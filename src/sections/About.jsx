@@ -7,12 +7,22 @@ import { BsCalendarFill } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 import { SiGooglemessages } from "react-icons/si";
 
+import { motion } from "framer-motion";
+import { reveal } from "../Animation";
+import { useScroll } from "../components/useScroll";
+
 import "../styles/sections/About.scss";
 function About() {
+  const [element, controls] = useScroll();
   return (
-    <div className="about-container" id="sobre">
+    <div className="about-container" id="sobre" ref={element}>
       <div className="container">
-        <div className="details">
+        <motion.div
+          className="details"
+          animate={controls}
+          variants={reveal}
+          transition={{ delay: 0.1, stiffness: 300 }}
+        >
           <Title title="Sobre a Empire" color="blue" />
 
           <p>
@@ -25,12 +35,28 @@ function About() {
             software, educação ou comunidade.
           </p>
           <Button content="Por que Empire ?" />
-        </div>
-        <div className="cards">
-          <Card title="Inovação" logo={<HiLightBulb />} />
-          <Card title="Planejamento" logo={<BsCalendarFill />} />
-          <Card title="Comunicação" logo={<BiSupport />} />
-          <Card title="24 * 7 Suporte" logo={<SiGooglemessages />} />
+        </motion.div>
+        <div className="cards" ref={element}>
+          <Card
+            title="Inovação"
+            logo={<HiLightBulb />}
+            animateCustom={controls}
+          />
+          <Card
+            title="Planejamento"
+            logo={<BsCalendarFill />}
+            animateCustom={controls}
+          />
+          <Card
+            title="Comunicação"
+            logo={<BiSupport />}
+            animateCustom={controls}
+          />
+          <Card
+            title="24 * 7 Suporte"
+            logo={<SiGooglemessages />}
+            animateCustom={controls}
+          />
         </div>
       </div>
     </div>

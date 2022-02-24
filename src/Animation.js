@@ -12,3 +12,11 @@ export const navbarAnimation = {
   hidden: { y: -100 },
   show: { y: 0 },
 };
+export const reveal = {
+  hidden: { x: -700 },
+  show: { x: 0 },
+};
+export const cardAnimation = {
+  hidden: { scale: 0, opacity: 0 },
+  show: { scale: 1, opacity: 1 },
+};

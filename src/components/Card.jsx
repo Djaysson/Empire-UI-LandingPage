@@ -1,14 +1,20 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { cardAnimation } from "../Animation";
 import "../styles/components/Card.scss";
-function Card({ logo, title }) {
+function Card({ logo, title, animateCustom }) {
   return (
-    <div className="card">
+    <motion.div
+      className="card"
+      variants={cardAnimation}
+      animate={animateCustom}
+      transition={{ stiffness: 5000 }}
+    >
       <div className="logo">{logo}</div>
       <div className="card-title">
         <h4>{title}</h4>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
