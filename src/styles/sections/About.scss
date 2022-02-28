@@ -3,11 +3,13 @@
 .about-container {
   background-color: $backgroundOtherColor;
   .container {
-    margin: 0 10%;
-    padding: 8rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    padding: 8rem 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4.8rem;
+    gap: 2rem;
+
     .details {
       p {
         color: $lightFontColor;
@@ -16,17 +18,17 @@
         width: 90%;
       }
       button {
-        margin-top: 4rem;
+        margin-top: 3rem;
       }
     }
     .cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2.4rem;
+      gap: 2rem;
     }
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .about-container {
     .container {
       grid-template-columns: 1fr;
@@ -38,25 +40,13 @@
       }
 
       .cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .about-container {
-    .container {
-      grid-template-columns: 1fr;
-      .details {
-        p {
-          line-height: 3.2rem;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1204px) {
+
+@media screen and (min-width: 768px) and (max-width: 1204px) {
   .about-container {
     .container {
       gap: 1rem;

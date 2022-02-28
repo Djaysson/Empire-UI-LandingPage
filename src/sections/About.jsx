@@ -8,7 +8,7 @@ import { BiSupport } from "react-icons/bi";
 import { SiGooglemessages } from "react-icons/si";
 
 import { motion } from "framer-motion";
-import { reveal } from "../Animation";
+import { reveal } from "../utils/Animation";
 import { useScroll } from "../components/useScroll";
 
 import "../styles/sections/About.scss";
@@ -21,7 +21,7 @@ function About() {
           className="details"
           animate={controls}
           variants={reveal}
-          transition={{ delay: 0.1, stiffness: 300 }}
+          transition={{ delay: 0.2, type: "tween" }}
         >
           <Title title="Sobre a Empire" color="blue" />
 
@@ -53,7 +53,7 @@ function About() {
             animateCustom={controls}
           />
           <Card
-            title="24 * 7 Suporte"
+            title="Suporte"
             logo={<SiGooglemessages />}
             animateCustom={controls}
           />

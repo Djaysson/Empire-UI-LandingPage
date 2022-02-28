@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { cardAnimation } from "../Animation";
+import { cardAnimation } from "../utils/Animation";
 import "../styles/components/Card.scss";
 function Card({ logo, title, animateCustom }) {
   return (

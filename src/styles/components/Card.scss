@@ -1,8 +1,8 @@
 @import "../utils/colors.scss";
 
 .card {
-  height: 12.8rem;
-  width: 24rem;
+  height: 12rem;
+  width: 26rem;
   background-color: $bgColor;
   padding: 1.6rem 2.4rem;
   border: none;
@@ -27,50 +27,35 @@
   }
   .card-title {
     margin-top: 1.6rem;
-    font-size: x-large;
     color: rgb(18, 18, 88);
   }
   &:hover {
     box-shadow: #410ba52f 5px 5px, #410ba51e 10px 10px, #410ba502 15px 15px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .card {
     height: 19.2rem;
-    width: 80vw;
-    padding: 4.8rem 5.6rem;
+    width: 35vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     .logo {
-      height: 8rem;
-      width: 8rem;
+      height: 6rem;
+      width: 6rem;
 
       svg {
-        font-size: 4.8rem;
+        font-size: 3rem;
       }
     }
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .card {
-    height: 14.4rem;
-    width: 40vw;
-    padding: 3.8rem 4.6rem;
-    .logo {
-      height: 6.4rem;
-      width: 6.4rem;
 
-      svg {
-        font-size: 3.2rem;
-      }
-    }
-    .card-title {
-      margin-bottom: 1, 6rem;
-      color: rgb(18, 18, 88);
-    }
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .card {
     height: 12.8rem;
-    width: 16vw;
+    width: 17vw;
   }
 }
