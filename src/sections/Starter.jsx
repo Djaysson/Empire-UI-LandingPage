@@ -7,7 +7,7 @@ import { GoPlay } from "react-icons/go";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 import { motion } from "framer-motion";
-import { headerAnimation, imageAnimation } from "../Animation";
+import { headerAnimation, imageAnimation } from "../utils/Animation";
 import { useScroll } from "../components/useScroll";
 
 import "../styles/sections/Starter.scss";

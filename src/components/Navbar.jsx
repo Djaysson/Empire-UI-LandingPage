@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import BrandName from "./BrandName";
 
 import { motion } from "framer-motion";
-import { navbarAnimation } from "../Animation";
+import { navbarAnimation } from "../utils/Animation";
 
 import "../styles/components/NavBar.scss";
 
@@ -34,20 +34,20 @@ function Navbar() {
       </div>
       <nav>
         <div className="links">
-          <ul>
-            <li>
+          <ul onClick={handleNavbarToggle}>
+            <li onClick={handleNavbarToggle}>
               <a href="#sobre">Sobre</a>
             </li>
-            <li>
+            <li onClick={handleNavbarToggle}>
               <a href="#servicos">Serviços</a>
             </li>
-            <li>
+            <li onClick={handleNavbarToggle}>
               <a href="#depoimentos">Depoimentos</a>
             </li>
-            <li>
+            <li onClick={handleNavbarToggle}>
               <a href="#blog">Blog</a>
             </li>
-            <li>
+            <li onClick={handleNavbarToggle}>
               <Button content="Contato" />
             </li>
           </ul>
