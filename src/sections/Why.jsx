@@ -8,7 +8,7 @@ import {
   topContainerAnimation,
   videoAnimation,
   reasonsAnimation,
-} from "../Animation";
+} from "../utils/Animation";
 
 import "../styles/sections/Why.scss";
 

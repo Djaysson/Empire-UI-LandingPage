@@ -3,8 +3,9 @@
 .why-container {
   min-height: 50vh;
   .container {
-    margin: 0 10%;
-    padding: 8rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    padding: 8rem 0rem;
     .top {
       display: flex;
       flex-direction: column;
@@ -27,41 +28,38 @@
     .content {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 3.5rem;
-      margin-top: 1.6rem;
+      gap: 3rem;
+      margin-top: 1.5rem;
+
       .reasons {
-        height: 100%;
+        height: 40vh;
+        width: 35vw;
+
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         ul {
-          width: 80%;
+          width: 90%;
+
           list-style: none;
+          list-style-image: url("../../assets/images/check-circle.svg");
+
           li {
             color: $lightFontColor;
-            margin-bottom: 2.4rem;
-            padding-left: 45px;
-            position: relative;
-            &::before {
-              content: "";
-              position: absolute;
-              top: -4px;
-              left: 0;
-              width: 24px;
-              height: 24px;
-              background-image: url("../../assets/images/check-circle.svg");
-              background-repeat: no-repeat;
-            }
+            margin-bottom: 1.6rem;
+            padding-left: 0.2rem;
           }
         }
       }
       .video {
-        height: 28.8rem;
-        width: 100%;
+        height: 28rem;
+        width: 95%;
         background-image: url("../../assets/images/videoImage.jpg");
 
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 1.6rem;
+        border-radius: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,7 +72,7 @@
     }
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   .why-container {
     .container {
       .top {
@@ -88,15 +86,18 @@
 
       .content {
         grid-template-columns: 1fr;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
         .reasons {
-          ul {
-            li {
-              margin-bottom: 3rem;
+          height: 40vh;
+          width: 70vw;
+          margin: 0 auto;
 
-              &::before {
-                top: 0;
-              }
-            }
+          ul {
+            margin-left: 2.3rem;
+            width: 100%;
           }
         }
         .video {
@@ -111,34 +112,42 @@
     }
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .why-container {
     .container {
       .top {
         .subTitle {
           p {
-            width: 100%;
+            width: 80%;
+            margin-bottom: 1.6rem;
           }
         }
       }
 
       .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+        margin-top: 1.3rem;
         .reasons {
+          height: 40vh;
+          width: 100%;
+          margin: 0 auto;
+
           ul {
             li {
-              margin-bottom: 3.5rem;
-
-              &::before {
-                top: 0;
-              }
+              color: $lightFontColor;
+              margin-bottom: 1rem;
+              padding-left: 0.3rem;
             }
           }
         }
         .video {
-          height: 30rem;
-          width: 100%;
+          margin-bottom: 2.4rem;
+          height: 25rem;
+          width: 90%;
           svg {
-            font-size: 10rem;
+            font-size: 8rem;
           }
         }
       }
