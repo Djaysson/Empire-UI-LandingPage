@@ -50,21 +50,3 @@
     }
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .blog-container {
-    .image {
-      height: 30rem;
-      img {
-        height: 30rem;
-      }
-    }
-    .content {
-      padding: 1rem;
-      .title {
-        h3 {
-          font-size: 2.2rem;
-        }
-      }
-    }
-  }
-}

@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import BrandName from "./BrandName";
 
 import { motion } from "framer-motion";
-import { navbarAnimation } from "../utils/Animation";
+import { navbarAnimation } from "../utils/Animations";
 
 import "../styles/components/NavBar.scss";
 

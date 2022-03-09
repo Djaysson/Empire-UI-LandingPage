@@ -33,11 +33,11 @@
     }
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .blogs-container {
     .container {
       .blogs {
-        grid-template-columns: 1fr;
+        gap: 1rem;
       }
     }
   }
@@ -46,16 +46,17 @@
   .blogs-container {
     .container {
       .blogs {
+        grid-template-columns: 1fr;
         gap: 1rem;
       }
     }
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .blogs-container {
     .container {
       .blogs {
-        gap: 1rem;
+        grid-template-columns: 1fr;
       }
     }
   }

@@ -7,7 +7,7 @@ import { ImLocation } from "react-icons/im";
 
 import { motion } from "framer-motion";
 import { useScroll } from "../components/useScroll";
-import { fromUp, fromDown } from "../Animation";
+import { fromUp, fromDown } from "../utils/Animations";
 
 import "../styles/sections/Footer.scss";
 function Footer() {

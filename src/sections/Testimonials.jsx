@@ -4,7 +4,7 @@ import Title from "../components/Title";
 
 import { motion } from "framer-motion";
 import { useScroll } from "../components/useScroll";
-import { textAnimation, cardAnimation } from "../Animation";
+import { textAnimation, cardAnimation } from "../utils/Animations";
 
 import "../styles/sections/Testimonials.scss";
 function Testimonials() {

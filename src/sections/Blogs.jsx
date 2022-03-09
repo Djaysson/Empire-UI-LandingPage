@@ -9,7 +9,7 @@ import Blog from "../components/Blog";
 
 import { motion } from "framer-motion";
 import { useScroll } from "../components/useScroll";
-import { textAnimation, cardAnimation } from "../Animation";
+import { textAnimation, cardAnimation } from "../utils/Animations";
 
 import "../styles/sections/Blogs.scss";
 

@@ -8,7 +8,7 @@ import { BiSupport } from "react-icons/bi";
 import { SiGooglemessages } from "react-icons/si";
 
 import { motion } from "framer-motion";
-import { reveal } from "../utils/Animation";
+import { reveal } from "../utils/Animations";
 import { useScroll } from "../components/useScroll";
 
 import "../styles/sections/About.scss";
