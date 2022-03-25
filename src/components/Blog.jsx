@@ -5,6 +5,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import "../styles/components/Blog.scss";
+
 function Blog({ image, title, subTitle, variants, animate }) {
   return (
     <motion.div

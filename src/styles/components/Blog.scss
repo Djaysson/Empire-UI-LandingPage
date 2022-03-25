@@ -32,12 +32,12 @@
     }
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .blog-container {
     .image {
-      height: 30rem;
+      height: 25rem;
       img {
-        height: 30rem;
+        height: 25rem;
       }
     }
     .content {

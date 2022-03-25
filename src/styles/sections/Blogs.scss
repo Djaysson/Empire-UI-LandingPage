@@ -33,30 +33,14 @@
     }
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .blogs-container {
     .container {
       .blogs {
-        gap: 1rem;
-      }
-    }
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .blogs-container {
-    .container {
-      .blogs {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
-    }
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .blogs-container {
-    .container {
-      .blogs {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.7rem;
       }
     }
   }

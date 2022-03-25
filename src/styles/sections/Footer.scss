@@ -11,7 +11,7 @@
     padding-top: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     ul {
       list-style: none;
       margin: 0;
@@ -197,7 +197,8 @@
   .footer-container {
     min-height: 30vh;
     .main-container {
-      gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
       ul {
         margin-bottom: 2rem;
       }
